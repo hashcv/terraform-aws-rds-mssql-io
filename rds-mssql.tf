@@ -35,6 +35,7 @@ resource "aws_db_instance" "default_mssql" {
   license_model             = "license-included"
   storage_type              = "io1"
   iops                      = "1000"
+  option_group_name         = "adssdl-mssql"
   engine                    = "sqlserver-se"
 //  engine_version            = "12.00.4422.0.v1"
   instance_class            = "${var.rds_instance_class}"
