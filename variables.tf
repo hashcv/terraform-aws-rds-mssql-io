@@ -3,16 +3,16 @@ variable "environment" {}
 
 // The allocated storage in gigabytes.
 variable "rds_allocated_storage" {
-  default = "200"
+  default = "250"
 }
 
 // The instance type of the RDS instance.
 variable "rds_instance_class" {
-  default = "db.m4.large"
+  default = "db.m4.2xlarge"
 }
 
 variable "rds_storage_type" {
-  default = "io1"
+  default = "gp2"
 }
 
 variable "rds_iops" {
