@@ -38,6 +38,10 @@ variable "mssql_admin_password" {}
 variable "vpc_subnet_ids" {
   type = "list"
 }
+  
+variable "rds_option_group_name" {
+  default = "main-mssql"
+}
 
 // The VPC identifier where security groups are going to be applied.
 variable "vpc_id" {}
