@@ -29,7 +29,7 @@ resource "aws_security_group" "rds_mssql_security_group" {
 
 resource "aws_db_instance" "default_mssql" {
   depends_on                = ["aws_db_subnet_group.default_rds_mssql"]
-  identifier                = "${var.environment}-mssql"
+  identifier                = "${var.identifier}"
   allocated_storage         = "${var.rds_allocated_storage}"
   storage_type              = "${var.rds_storage_type}"
   iops                      = "${var.rds_iops}"
