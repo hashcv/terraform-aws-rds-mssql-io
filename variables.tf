@@ -1,6 +1,10 @@
 // Environment name, used as prefix to name resources.
 variable "environment" {}
 
+variable "identifier" {
+  default = "mssql-server"  
+}
+
 // The allocated storage in gigabytes.
 variable "rds_allocated_storage" {
   default = "250"
