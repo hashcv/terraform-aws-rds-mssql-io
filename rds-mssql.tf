@@ -37,6 +37,7 @@ resource "aws_db_instance" "default_mssql" {
   publicly_accessible       = "${var.rds_publicly_accessible}"
   license_model             = "license-included"
   engine                    = "sqlserver-se"
+  engine_version            = "13.00"
   instance_class            = "${var.rds_instance_class}"
   multi_az                  = "${var.rds_multi_az}"
   username                  = "${var.mssql_admin_username}"
