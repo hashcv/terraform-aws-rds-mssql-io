@@ -47,6 +47,7 @@ resource "aws_db_instance" "default_mssql" {
   backup_retention_period   = 3
   skip_final_snapshot       = "${var.skip_final_snapshot}"
   final_snapshot_identifier = "${var.environment}-mssql-final-snapshot"
+  timezone                  = "Central Europe Standard Time"
 }
 
 // Identifier of the mssql DB instance.
